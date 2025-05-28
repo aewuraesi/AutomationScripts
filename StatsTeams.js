@@ -108,7 +108,7 @@ const main = async (req, res) => {
         const table = createTable(records);
 
         // Webhook Initiation
-        var webhookUrl = 'https://hubtel10.webhook.office.com/webhookb2/{webhook-id}';
+        var webhookUrl = 'https:{webhookUrl}';
         const webhook = new IncomingWebhook(webhookUrl);
 
         const sentFrom = "Sender ID";
